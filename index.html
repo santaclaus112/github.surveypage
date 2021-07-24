@@ -1,0 +1,135 @@
+
+<link rel="stylesheet" href="style.css">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Logo_of_YouTube_%282013-2015%29.svg/668px-Logo_of_YouTube_%282013-2015%29.svg.png" alt="Youtube logo">
+<h1 id="title">Customer Survey Form</h1>
+<div id="form-outer">
+  <p id="description">This survey will help us know how best improve our service so we can serve you even better!!!</p>
+  <form id="survey-form" method="GET">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name"> *Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter Name..." required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email"> *Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter Email...">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="Phone number"> Phone Number: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="Phone number" id="number" min="0" max="111" class="input-field" placeholder="--Optional--">
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="version">What do you use Youtube for?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="version" class="dropdown">
+          <option disabled value>
+            --
+          </option>
+          <option value="--">
+          --
+          </option>
+          <option value="Music Videos">
+           Music Videos
+          </option>    
+          <option value="Comedy shows">
+            Comedy Shows
+          </option>
+          <option value="Other">
+          Other
+          </option>
+        </select>          
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels"> 
+        <label for="how-U-know"> 
+          How did you hear about Youtube?  
+        </label>
+      </div>
+      <div class="rightTab">
+        <ul id="how-U-know">
+          <li class="checkbox">
+            <label>
+              <input name="how-know" value="1" type="checkbox" class="user-option">Friends
+            </label>            
+          </li>
+          <li class="checkbox">
+            <label>
+              <input name="how-know" value="2" type="checkbox" class="user-option">Family
+            </label>            
+          </li>
+          <li class="checkbox">
+            <label>
+              <input name="how-know" value="3" type="checkbox" class="user-option">Internet
+            </label>            
+          </li>
+          <li class="checkbox">
+            <label>
+              <input name="how-know" value="6" type="checkbox" class="user-option">Other
+            </label>            
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="user-option">Are you satisfied with using Youtube?</label>
+      </div>
+      <div class="rightTab">
+        <ul>
+          <li class="radio">
+            <label>
+              <input name="radio-buttons" value="1" type="radio" class="user-option">Don't like it
+            </label>
+          </li>
+          <li class="radio">
+            <label>
+              <input name="radio-buttons" value="3" type="radio" class="user-option">Not sure yet
+            </label>
+          </li>
+          <li class="radio">
+            <label>
+              <input name="radio-buttons" value="4" type="radio" class="user-option">Like it
+            </label>
+          </li>
+          <li class="radio">
+            <label>
+              <input name="radio-buttons" value="5" type="radio" class="user-option">Love it!
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="suggestions">Suggestions!</label>        
+      </div>
+        <div class="rightTab">
+          <textarea id="suggestions" class="input-field" name="suggestions" placeholder="Share your ideas here..."></textarea>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p class="thank-you">Thanks for your feedback.</p>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
